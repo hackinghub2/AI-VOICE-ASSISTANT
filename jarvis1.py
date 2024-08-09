@@ -77,8 +77,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('jtalekar2003@gmail.com', 'your-password')
-    server.sendmail('jtalekar2003@gmail.com', to, content)
+    server.login('Type your mail here', 'your-password')
+    server.sendmail('Type your mail here', to, content)
     server.close()
 
 
@@ -110,7 +110,7 @@ def sendEmail(to, content):
 
             elif "calculate" in query:
                 
-                app_id = "2R58LH-AJ8QYKTGEV"
+                app_id = "Get your api key from wolframalpha"
                 client = wolframalpha.Client(app_id)
                 indx = query.lower().split().index('calculate')
                 query = query.split()[indx + 1:]
@@ -150,12 +150,12 @@ def sendEmail(to, content):
                 try:
                     speak("What should I say?")
                     content = takeCommand()
-                    to = "jtalekar2003@gmail.com"    
+                    to = "Type your mail here"    
                     sendEmail(to, content)
                     speak("Email has been sent!")
                 except Exception as e:
                     print(e)
-                    speak("Sorry my friend jatin bhai. I am not able to send this email")    
+                    speak("Sorry my friend jatin , I am not able to send this email")    
 class Main(QMainWindow):
     def __init__(self):
         super().__init__()
