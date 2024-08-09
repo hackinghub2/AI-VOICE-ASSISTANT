@@ -81,7 +81,7 @@ def wish():
 
 # for news updates
 def news():
-    main_url = 'http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3c1f125808f3420c9507ef631b0d71ed'
+    main_url = 'http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=make you api key here'
 
     main_page= requests.get(main_url).json()
     # print(main_page)
@@ -123,7 +123,7 @@ def news():
 
 def track_asteroids():
     url = "https://api.nasa.gov/neo/rest/v1/feed"
-    api_key = "Kp6AyHoEenURFBajMmbdkxjuXa7Vdp4I0mfPqmzJ"  # Get an API key from NASA
+    api_key = "paste your api key here"  # Get an API key from NASA
 
     params = {
         "api_key": api_key,
@@ -155,7 +155,7 @@ def track_asteroids():
 def get_space_news():
     url = "https://api.nasa.gov/planetary/apod"
 
-    api_key = "Kp6AyHoEenURFBajMmbdkxjuXa7Vdp4I0mfPqmzJ"  # Get an API key from NASA
+    api_key = "Paste your api key"  # Get an API key from NASA
     params = {"api_key": api_key}
     response = requests.get(url, params=params)
     data = response.json()
@@ -168,7 +168,7 @@ def get_space_news():
         return "Unable to fetch space news at the moment."
 
 # def get_weather(city):
-#     api_key = "a03b18320222e0ca29c51f0cbf097825"  # Replace with your actual API key
+#     api_key = "paste your api key"  # Replace with your actual API key
 #     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 #     complete_url = f"{base_url}q={city}&appid={api_key}"
@@ -351,81 +351,6 @@ class MainThread(QThread):
                 #         speak(conversion_result)
                 #     except (ValueError, IndexError):
                 #         speak("Sorry, I couldn't understand the currency conversion request. Please try again.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 elif "temperature" in self.query:
