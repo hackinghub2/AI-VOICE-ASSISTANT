@@ -6,7 +6,6 @@ import webbrowser
 import password
 import random
 import sys
-import openai
 import time
 from pywikihow import search_wikihow
 from PyQt5.QtCore import pyqtSlot
